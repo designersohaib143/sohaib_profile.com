@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sohaib — Future Ethical Hacker</title>
+  <meta name="description" content="Personal portfolio of Sohaib, a Class 8 student aspiring to become an ethical hacker">
+  <meta name="color-scheme" content="light">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating shapes -->
+  <div class="floating-bg" aria-hidden="true">
+    <span class="bubble b1"></span>
+    <span class="bubble b2"></span>
+    <span class="blob bl1"></span>
+    <span class="blob bl2"></span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <div class="logo-wrapper">
+          <img src="images/logo1.jpg" alt="logo" onerror="this.style.display='none'">
+          <div class="svg-fallback-logo" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#6C63FF"/>
+              <path d="M22 12C22 12 20.5 11 18 11C15.5 11 14 12 14 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10 16H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M14 20C14 20 15.5 21 18 21C20.5 21 22 20 22 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="name">Sohaib</div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="siteNav" class="nav" role="navigation">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#works">My Works</a>
+        <a class="nav-link" href="#lifestyle">Lifestyle</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero" aria-labelledby="home-title">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="glass card-entrance" data-delay="0">
+            <h1 id="home-title" class="hero-title">Assalamualaikum — <span>I'm <span id="nameHighlight">Sohaib</span></span></h1>
+            <div class="typewriter" data-text="Class 8 • Future Ethical Hacker • Web & Security learner"></div>
+            <p class="lead">I balance school, faith, and learning to become an ethical hacker. I build small projects, practice web fundamentals, and focus on ethics-first security.</p>
+
+            <div class="hero-cta">
+              <a class="btn primary" href="#about">About Me</a>
+              <a class="btn ghost" href="#works">See My Works</a>
+            </div>
+
+            <ul class="quick-stats">
+              <li><i class="fas fa-graduation-cap"></i> <strong>School:</strong> Class 8</li>
+              <li><i class="fas fa-code"></i> <strong>Daily:</strong> Coding Practice</li>
+              <li><i class="fas fa-shield-alt"></i> <strong>Goal:</strong> Ethical Hacker</li>
+            </ul>
+          </div>
+
+          <div class="card-entrance" data-delay="0.1">
+            <div class="photo-wrap glass">
+              <img class="profile-img" src="images/sohaibpic.jpg" alt="Sohaib portrait" loading="lazy"
+                   onerror="this.style.display='none';document.getElementById('svgFallback').style.display='flex'">
+              <div id="svgFallback" class="svg-fallback" style="display:none" aria-hidden="true">
+                <svg width="280" height="280" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="280" height="280" rx="24" fill="#F1F8FF"/>
+                  <circle cx="140" cy="100" r="50" fill="#6C63FF"/>
+                  <rect x="60" y="170" width="160" height="40" rx="8" fill="#EAF0FF"/>
+                </svg>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head card-entrance glass" data-delay="0.1">
+          <h2 id="about-title">About Me</h2>
+          <p class="lead">Assalamualaikum — I'm <strong>Sohaib</strong>, a Class 8 student from India. My faith guides me — I study and practice coding with honesty and patience.</p>
+          <div class="about-grid">
+            <div class="about-card">
+              <h3><i class="fas fa-user-graduate"></i> My Journey</h3>
+              <p>I started learning coding at a young age and quickly developed a passion for cybersecurity. As a Muslim student, I believe in using technology ethically to make the digital world safer.</p>
+              <p>When I'm not coding, I enjoy reading about new technologies, solving puzzles, and helping others learn about online safety.</p>
+            </div>
+            <div class="about-card">
+              <h3><i class="fas fa-info-circle"></i> Details</h3>
+              <dl>
+                <dt><i class="fas fa-map-marker-alt"></i> Location</dt>
+                <dd>India</dd>
+                <dt><i class="fas fa-school"></i> School</dt>
+                <dd>Class 8</dd>
+                <dt><i class="fas fa-language"></i> Languages</dt>
+                <dd>English, Hindi/Urdu, Bhojpuri</dd>
+                <dt><i class="fas fa-heart"></i> Interests</dt>
+                <dd>Tech, Security, Problem Solving</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MY WORKS SECTION -->
+    <section id="works" aria-labelledby="works-title">
+      <div class="container">
+        <div class="glass card-entrance" data-delay="0.2">
+          <h2 id="works-title">My Works</h2>
+          <p class="lead">Here's what I've been working on to develop my skills in web development and cybersecurity.</p>
+
+          <div class="works-grid">
+            <div class="work-card">
+              <div class="work-icon"><i class="fas fa-code"></i></div>
+              <h3>Web Development</h3>
+              <ul>
+                <li>Building responsive websites</li>
+                <li>Practicing HTML/CSS/JavaScript</li>
+                <li>Creating small web applications</li>
+                <li>Learning front-end frameworks</li>
+              </ul>
+            </div>
+            
+            <div class="work-card">
+              <div class="work-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3>Security Research</h3>
+              <ul>
+                <li>Studying ethical hacking</li>
+                <li>Learning about network security</li>
+                <li>Practicing Linux commands</li>
+                <li>Exploring cybersecurity tools</li>
+              </ul>
+            </div>
+            
+            <div class="work-card">
+              <div class="work-icon"><i class="fas fa-book"></i></div>
+              <h3>Continuous Learning</h3>
+              <ul>
+                <li>Online courses and tutorials</li>
+                <li>Reading tech books/articles</li>
+                <li>Following security blogs</li>
+                <li>Participating in coding challenges</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIFESTYLE SECTION -->
+    <section id="lifestyle" aria-labelledby="lifestyle-title">
+      <div class="container">
+        <div class="glass card-entrance" data-delay="0.3">
+          <h2 id="lifestyle-title">My Lifestyle</h2>
+          <p class="lead">How I balance my studies, faith, and passion for technology in daily life.</p>
+
+          <div class="lifestyle-grid">
+            <div class="lifestyle-card">
+              <div class="lifestyle-icon"><i class="fas fa-mosque"></i></div>
+              <h3>Faith & Values</h3>
+              <p>My Islamic faith guides my ethical approach to technology. I prioritize honesty, integrity, and using my skills to help others.</p>
+            </div>
+            
+            <div class="lifestyle-card">
+              <div class="lifestyle-icon"><i class="fas fa-graduation-cap"></i></div>
+              <h3>Education</h3>
+              <p>As a Class 8 student, I maintain focus on my school studies while dedicating time each day to learn programming and security concepts.</p>
+            </div>
+            
+            <div class="lifestyle-card">
+              <div class="lifestyle-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Coding Routine</h3>
+              <p>I practice coding daily, working on small projects and challenges to steadily improve my skills in web development and security.</p>
+            </div>
+            
+            <div class="lifestyle-card">
+              <div class="lifestyle-icon"><i class="fas fa-brain"></i></div>
+              <h3>Mindset</h3>
+              <p>I approach learning with patience and persistence, understanding that mastering technical skills is a gradual journey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="glass card-entrance" data-delay="0.4">
+          <h2 id="contact-title" class="section-title">Let's Connect</h2>
+          <p class="lead contact-intro">I'm always open to discussing coding projects, security concepts, or potential mentorship opportunities.</p>
+
+          <div class="contact-grid">
+            <div class="contact-column">
+              <!-- Primary Contact Methods -->
+              <div class="contact-card highlight">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-info">
+                  <h3>Email Me</h3>
+                  <p>For formal inquiries and longer discussions</p>
+                  <a href="mailto:sohaib@example.com" class="contact-link">sohaib@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-card highlight">
+                <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="contact-info">
+                  <h3>WhatsApp</h3>
+                  <p>For quick questions and chats</p>
+                  <a href="https://wa.me/91XXXXXXXXXX" class="contact-link">+91-XXXXXXXXXX</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-column">
+              <!-- Social Media Links -->
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                <div class="contact-info">
+                  <h3>Instagram</h3>
+                  <p>Follow my learning journey</p>
+                  <a href="https://instagram.com/sohaib" class="contact-link" target="_blank">@sohaib</a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div class="contact-info">
+                  <h3>GitHub</h3>
+                  <p>Check out my projects</p>
+                  <a href="https://github.com/sohaib" class="contact-link" target="_blank">github.com/sohaib</a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon"><i class="fab fa-twitter"></i></div>
+                <div class="contact-info">
+                  <h3>Twitter</h3>
+                  <p>Tech thoughts and updates</p>
+                  <a href="https://twitter.com/sohaib" class="contact-link" target="_blank">@sohaib</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-note">
+            <i class="fas fa-info-circle"></i>
+            <p><strong>Note:</strong> I'm committed to ethical learning. Please don't ask me to perform any security testing without proper authorization. I'm happy to discuss concepts and learning resources!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="brand">
+            <div class="logo-wrapper">
+              <img src="images/logo1.jpg" alt="logo" onerror="this.style.display='none'">
+              <div class="svg-fallback-logo" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#6C63FF"/>
+                  <path d="M16.5 9C16.5 9 15.375 8.25 13.5 8.25C11.625 8.25 10.5 9 10.5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M7.5 12H16.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M10.5 15C10.5 15 11.625 15.75 13.5 15.75C15.375 15.75 16.5 15 16.5 15" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="name">Sohaib</div>
+          </a>
+          <p>Future Ethical Hacker & Web Developer</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">My Works</a></li>
+            <li><a href="#lifestyle">Lifestyle</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Sohaib. All rights reserved.</p>
+        <a href="#home" class="back-to-top">
+          <i class="fas fa-arrow-up"></i> Back to top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
